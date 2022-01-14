@@ -1,0 +1,178 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+ 
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+\begin{document}
+\vspace*{-38pt}
+{\fontfamily{lmr}\selectfont
+
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Shane Trotter}}\\
+	Tucson, AZ $\cdot$ shane.trotter@gmail.com $\cdot$ (407)-494-1137\\
+\end{center}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Stealth Startup} \hfill Lafayette, IN\\
+\textit{Principal Engineer} \hfill Jul 2021 - Jan 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item High performance network analytics and information security system design
+	\item Written primarily in Golang for backend, ES6/CSS3 frontend
+\end{itemize}
+\textbf{Lumen Technologies} \hfill Broomfield, CO\\
+\textit{Lead Software Engineer} \hfill Apr 2020 - Jul 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Ruby on Rails for multiple applications (4.x, 5.x)
+	\item Golang for scalable big data analytics pipelines and several other back-end systems
+	\item DBA, developer and maintainer of PostgreSQL, MySQL, Redis, RabbitMQ, and Kafka
+	\item Python (primarily in the context of SaltStack)
+\end{itemize}
+\textbf{Independent Contractor} \hfill Broomfield, CO\\
+\textit{Lead Software Engineer} \hfill Aug 2019 - Feb 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Software architecture and development lifecycle from start to production deployment and scaling
+	\item Languages primarily used: NodeJS (ES6), Golang, TypeScript, Ruby, Python and Solidity for Ethereum blockchain development
+\end{itemize}
+\textbf{Charter Communications} \hfill Denver, CO\\
+\textit{Senior Software Engineer/Architect contractor} \hfill Feb 2019 - Jul 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Big data analytics sitting on Hadoop clusters
+	\item Architecting and utilizing GraphQL APIs using Apollo and TypeScript
+	\item NodeJS back-end development with Redis, MongoDB, PostgreSQL
+	\item Scala development for utilizing Spark with Spark Streaming for analytics pipelines
+\end{itemize}
+\textbf{Cubeform, Inc} \hfill Denver, CO\\
+\textit{Engineering Director} \hfill Jan 2018 - Feb 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Web3j and web3.js development for the Ethereum blockchain
+	\item Solidity and OpenZeppelin for writing and publishing smart contracts
+	\item Integrating Go, ES6 together to combine smart contracts with IPFS
+	\item Writing SGX enclaves to ensure secure execution environments using Intel technology in C
+	\item Implemented ERC20 token standards on thousands of Bitcoin ATMs worldwide
+\end{itemize}
+\textbf{Lumen/CenturyLink/Level 3 Communications} \hfill Broomfield, CO\\
+\textit{Lead Software Engineer/Architect} \hfill Sep 2014 - Sep 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Lead developer/architect of a big data analytics time series cluster using Hadoop, Kafka, Spark, Cassandra, HBase, OpenTSDB, KairosDB, Grafana, and Go microservices
+	\item Responsible for optimized schema development between SQL, HDFS, HBase, and Cassandra
+	\item Lead developer/architect over configuration management databases/front-ends using Rails 5, PostgreSQL 9/10, and RSpec. 99\% Code coverage achieved including the API
+\vspace{-1mm}
+	\item Lead developer/architect over a monitoring/alerting/analytics system covering tens of thousands of bare metal servers globally using distributed processing pipelines, Redis, Ruby, Rails, RabbitMQ, SNMP, Kafka, OpenTSDB, REST APIs. This pipeline/application normalized data from 15+ subsystems and was required to have 99.999\% availability
+\newpage
+	\item Author of a patent to automate network device configuration using a custom Ruby domain specific language (DSL) with multi-threading over Serial-over-LAN interfaces. Patent available here: https://patents.google.com/patent/US20170237619A1/
+	\item Responsible for technical interviews of Ruby and Rails developers
+	\item Migrated old systems to scalable clustered solutions, including RabbitMQ to Kafka conversion to handle millions of events per second
+\end{itemize}
+\textbf{Mondo Robot} \hfill Boulder, CO\\
+\textit{Senior Web Developer} \hfill Oct 2013 - Apr 2014\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Lead developer on Canon\textquotesingle{}s real-time video-compositing engine for Christmas promotions using C++, Rails, ImageMagick, FFMpeg, PostgreSQL, Amazon EC2, with Facebook integration
+	\item Senior developer on the Michael J Fox research platform to help cure Parkinson\textquotesingle{}s disease using Rails, PostgreSQL and many other Ruby related technologies including Redis for queuing
+	\item Lead Developer of ZenPlanner.com
+	\item Ported websites to Rails for Winter Park Resort
+	\item Responsible for interviewing and approving new developers as well as mentoring new technologies
+\end{itemize}
+\textbf{Tribune Company} \hfill Orlando, FL\\
+\textit{Team Lead} \hfill Apr 2011 - May 2013\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Ported from python/flask, scaled, extended, and implemented TDD around an HTML5 responsive photo gallery application for 8+ Tribune news properties, leveraging Rails 3.2, jQuery, bootstrap, Akamai, and Tribune\textquotesingle{}s custom image/web services with RSpec for automated testing
+	\item Lead developer/architect for elections coverage software (front and back end) from national results down to precinct level, including amendments and live-map development assistance using jQuery/raphael.js/JSON web services
+	\item Performance optimization for scaling to millions of hits using various technologies/methods including Akamai
+	\item Solutions architect responsible for documenting entire application design before development including schema design, network architecture, mockups, sequence diagrams, etc.
+	\item Responsible for IT property/company acquisitions, documenting and auditing applications for acquisition
+	\item Implemented test-driven development methodologies and continuous integration for the team
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming languages:    & Ruby, Go, ES6 (JavaScript), TypeScript, Java, Scala, Solidity, Python \\
+	Software dev. lifecycles: & Unit testing, Docker, Gitlab, Github, Jenkins, Continuous Integration \\
+	Data visualization:       & Grafana, HTML5, CSS3, Bootstrap, Semantic UI, D3.js, NVD3             \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Awards}
+\textbf{\#1 Employee at Level 3 Communications} \hfill Jeff Storey (CEO)\\
+Admin, architect, and developer of the largest big data pipelines in the company at the time. \hfill 2016\\
+\vspace*{2mm}
+\textbf{Systems and Methods Patent} \hfill USPTO\\
+Designed a custom language using meta-programming in a domain specific language, patent available here: https://patents.google.com/patent/WO2017142599A1/en \hfill 2020\\
+\vspace*{2mm}
+
+\header{Education}
+\textbf{ITT Tech}\hfill Birmingham, AL\\
+Associates of Applied Science Web Development \textit{GPA: 3.96} \hfill Oct 2002 - Oct 2004\\
+\vspace{2mm}
+
+\
+\end{document}
